@@ -14,13 +14,13 @@ html {
   font-size: 62.5%; /*1rem = 10px*/
   font-family: "Poppins", sans-serif;
 
-  @include respond-to(tablet) {
+  @include respond-to(md) {
     font-size: 56.25%;
   }
-  @include respond-to(laptop) {
+  @include respond-to(lg) {
     font-size: 50%;
   }
-  @include respond-to(desktop) {
+  @include respond-to(xl) {
     font-size: 75%;
   }
 
