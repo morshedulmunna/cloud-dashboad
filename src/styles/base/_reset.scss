@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Global reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+}
+
+html {
+  font-size: 62.5%; /*1rem = 10px*/
+  font-family: "Poppins", sans-serif;
+
+  @include respond-to(tablet) {
+    font-size: 56.25%;
+  }
+  @include respond-to(laptop) {
+    font-size: 50%;
+  }
+  @include respond-to(desktop) {
+    font-size: 75%;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: transparent;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  scrollbar-width: thin;
+  scrollbar-color: #f5f5f5 rgba(0, 0, 0, 0);
+}
+
+/* Block-level element reset */
+$blockElements: body, address, article, aside, blockquote, details, dialog, dd,
+  div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5,
+  h6, header, hgroup, hr, main, nav, ol, p, pre, section, table, ul;
+@each $element in $blockElements {
+  #{$element} {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* List-style reset */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Quotes reset */
+blockquote,
+q {
+  quotes: none;
+  &::before,
+  &::after {
+    content: "";
+    content: none;
+  }
+}
+
+/* Table reset */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Form element reset */
+$formElements: button, input, optgroup, select, textarea;
+@each $element in $formElements {
+  #{$element} {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+    outline: none;
+    appearance: none;
+    vertical-align: middle;
+  }
+}
+
+/* Link reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Media element reset */
+$mediaElements: audio, canvas, embed, iframe, img, object, svg, video;
+@each $element in $mediaElements {
+  #{$element} {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Additional form element reset */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="file"],
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* List style reset */
+$lists: dl, ol, ul;
+@each $element in $lists {
+  #{$element} {
+    list-style: none;
+  }
+}
+
+/* Table element reset */
+$tableElements: caption, th, td;
+@each $element in $tableElements {
+  #{$element} {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: top;
+  }
+}

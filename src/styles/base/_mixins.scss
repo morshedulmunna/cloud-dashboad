@@ -1,0 +1,50 @@
+/*=============================================
+=            Defaults Ready Functions         =
+=============================================*/
+
+/*----------  clear fix after content  ----------*/
+@mixin clearFix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/*----------  Something center using position  ----------*/
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*----------  Breakpoints mobile first approach  ----------*/
+/**
+ * ====== Example for mobile first approach ========
+ * 
+ * .my-element {
+  width: 100%;
+
+  @include respond-to(tablet) {
+    width: 50%;
+  }
+
+  @include respond-to(laptop) {
+    width: 30%;
+  }
+
+  @include respond-to(desktop) {
+    width: 20%;
+  }
+}
+ */
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @error "Invalid breakpoint: #{$breakpoint}. Please use one of  tablet, laptop, desktop.";
+  }
+}

@@ -1,0 +1,106 @@
+/* Colors */
+$primary: #0d6efd;
+$secondary: #6c757d;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #212529;
+
+/* Typography */
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace;
+$font-size-base: 1rem;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$line-height-base: 1.5;
+$headings-margin-bottom: 0.5rem;
+$paragraph-margin-bottom: 1rem;
+
+/* Spacing */
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: (
+    $spacer * 0.25,
+  ),
+  2: (
+    $spacer * 0.5,
+  ),
+  3: $spacer,
+  4: (
+    $spacer * 1.5,
+  ),
+  5: (
+    $spacer * 3,
+  ),
+);
+
+/* Border */
+$border-width: 1px;
+$border-radius: 0.25rem;
+
+/* Container */
+$container-max-widths: (
+  mobile: 576px,
+  tablet: 768px,
+  laptop: 992px,
+  desktop: 1200px,
+);
+
+$breakpoints: (
+  mobile: 576px,
+  tablet: 768px,
+  laptop: 992px,
+  desktop: 1200px,
+);
+
+/* Grid system */
+$grid-columns: 12;
+$grid-gutter-width: 1.5rem;
+
+/* Z-index */
+$z-index-navbar: 1000;
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+
+/* Forms */
+$input-padding-y: 0.375rem;
+$input-padding-x: 0.75rem;
+$input-line-height: 1.25;
+$input-border-radius: 0.25rem;
+
+/* Buttons */
+$btn-border-radius: 0.25rem;
+$btn-font-weight: 400;
+
+/* Alerts */
+$alert-padding-y: 0.75rem;
+$alert-padding-x: 1.25rem;
+$alert-margin-bottom: 1rem;
+$alert-border-radius: $border-radius;
+
+/* Cards */
+$card-spacing-y: 1.25rem;
+$card-border-width: 1px;
+$card-border-radius: $border-radius;
+
+/* Modal */
+$modal-dialog-margin: 0.5rem;
+$modal-title-line-height: 1.5;
+
+/* Pagination */
+$pagination-padding-y: 0.5rem;
+$pagination-padding-x: 0.75rem;
+
+/* Navbar */
+$navbar-padding-y: 0.5rem;
+$navbar-padding-x: 1rem;
+
+/* ... and more variables for various components and configurations */
