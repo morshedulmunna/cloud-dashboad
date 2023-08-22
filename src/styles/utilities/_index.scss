@@ -3,3 +3,50 @@
  * Utilities class global class for all page components layouts 
  *
  */
+
+body {
+  background-color: $background-color;
+}
+
+/**
+ *
+ * Generate Shadow class 
+ *Using Example: @extend .shadow-sm
+ */
+@each $size, $shadow in $shadows {
+  .shadow-#{$size} {
+    box-shadow: #{$shadow};
+  }
+}
+
+.container {
+  max-width: $sm;
+  margin: auto;
+  margin-top: 0.4rem;
+  padding: 1.2rem;
+  @include respond-to(md) {
+    max-width: $md;
+    margin: auto;
+    margin-top: 1.2rem;
+  }
+  @include respond-to(lg) {
+    max-width: $lg;
+    margin: auto;
+    margin-top: 1.2rem;
+  }
+  @include respond-to(xl) {
+    max-width: $xl;
+    margin: auto;
+    margin-top: 1.2rem;
+  }
+  @include respond-to(xxl) {
+    max-width: $xxl;
+    margin: auto;
+    margin-top: 1.2rem;
+  }
+  @include respond-to(xxxl) {
+    max-width: $xxxl;
+    margin: auto;
+    margin-top: 1.2rem;
+  }
+}

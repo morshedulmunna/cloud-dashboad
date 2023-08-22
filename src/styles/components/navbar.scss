@@ -1,0 +1,149 @@
+.navbar_wrapper {
+  border-bottom: 1px solid rgb(238, 238, 238);
+  margin-bottom: 1rem;
+  padding: 0 1.8rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respond-to(md) {
+    height: 7rem;
+  }
+  @include respond-to(xl) {
+    height: 8rem;
+  }
+
+  .search_filter {
+    display: none;
+    width: 50%;
+
+    @include respond-to(lg) {
+      display: block;
+    }
+    .search_filter_wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 1rem;
+      .search_input_wrapper {
+        position: relative;
+
+        svg {
+          position: absolute;
+          top: 25%;
+          left: 2%;
+        }
+
+        input {
+          font-size: 15px;
+          font-style: normal;
+          height: 40px;
+
+          width: 100%;
+          padding: {
+            left: 3.4rem;
+            right: 1rem;
+          }
+
+          border-radius: 10px;
+          border: 1px solid #f0f0f0;
+          background: $light;
+          color: $text-color;
+          line-height: normal;
+
+          @include respond-to(lg) {
+            min-width: 300px;
+          }
+          @include respond-to(xl) {
+            height: 54px;
+            min-width: 500px;
+          }
+        }
+      }
+
+      .filter_wrapper {
+        position: relative;
+
+        svg {
+          position: absolute;
+          right: 0.8rem;
+          top: 45%;
+        }
+
+        .custom-select {
+          font-size: 15px;
+          font-style: normal;
+          height: 40px;
+          padding: {
+            left: 1.4rem;
+            right: 3.9rem;
+          }
+
+          border-radius: 10px;
+          border: 1px solid #f0f0f0;
+          background: $light;
+          color: $text-color;
+          line-height: normal;
+          @include respond-to(xl) {
+            height: 54px;
+          }
+        }
+      }
+    }
+  }
+
+  /*----------  Profile and Bar Style  ----------*/
+
+  .profile-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .profile_wrapper {
+      display: none;
+
+      .content {
+        display: flex;
+        align-content: center;
+
+        .profile {
+          display: flex;
+          align-items: center;
+          padding-left: 2rem;
+
+          div {
+            padding-left: 1.2rem;
+            h5 {
+              color: $secondary-color;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+            p {
+              color: $text-color;
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+          }
+        }
+      }
+
+      @include respond-to(md) {
+        display: block;
+      }
+    }
+
+    i {
+      font-size: 3rem;
+      padding-left: 2rem;
+
+      @include respond-to(lg) {
+        display: none;
+      }
+    }
+  }
+}
