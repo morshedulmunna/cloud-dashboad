@@ -109,48 +109,59 @@
     align-items: center;
 
     .profile_wrapper {
-      display: none;
-
       .content {
         display: flex;
         align-content: center;
+
+        .icon {
+          width: 20px;
+          @include respond-to(md) {
+            width: fit-content;
+          }
+        }
 
         .profile {
           display: flex;
           align-items: center;
           padding-left: 2rem;
 
+          img {
+            width: 38px;
+
+            @include respond-to(md) {
+              width: fit-content;
+            }
+          }
+
           div {
             padding-left: 1.2rem;
             h5 {
               color: $secondary-color;
-              font-size: 16px;
+              font-size: 12px;
               font-style: normal;
               font-weight: 700;
               line-height: normal;
+
+              @include respond-to(md) {
+                font-size: 16px;
+              }
             }
             p {
               color: $text-color;
-              font-size: 13px;
+              font-size: 10px;
               font-style: normal;
               font-weight: 500;
               line-height: normal;
+
+              @include respond-to(md) {
+                font-size: 13px;
+              }
             }
           }
         }
       }
 
       @include respond-to(md) {
-        display: block;
-      }
-    }
-
-    i {
-      font-size: 2.5rem;
-      padding-left: 2rem;
-
-      @include respond-to(lg) {
-        display: none;
       }
     }
   }
