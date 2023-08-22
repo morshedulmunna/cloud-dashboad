@@ -22,6 +22,22 @@
     padding: 0 1.8rem;
   }
 
+  .logo {
+    #desktop-logo {
+      display: none;
+
+      @include respond-to(lg) {
+        display: block;
+      }
+    }
+
+    .mobile-logo {
+      @include respond-to(lg) {
+        display: none;
+      }
+    }
+  }
+
   .search_filter {
     display: none;
     width: 50%;
