@@ -18,6 +18,9 @@
       .sidebar_wrapper {
         display: none;
         padding: 0.4rem;
+        border-right: 1px solid $card-bg;
+        height: 100vh;
+        background-color: $light;
 
         @include respond-to(lg) {
           display: block;
@@ -25,7 +28,6 @@
       }
 
       .middle_wrapper {
-        background-color: azure;
         padding: 0.4rem;
       }
 

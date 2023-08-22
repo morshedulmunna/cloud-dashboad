@@ -13,6 +13,8 @@
   backdrop-filter: blur(7.9px);
   -webkit-backdrop-filter: blur(7.9px);
 
+  z-index: 1000;
+
   @include respond-to(md) {
     height: 7rem;
     padding: 0 1.8rem;
