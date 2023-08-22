@@ -1,17 +1,25 @@
 .navbar_wrapper {
   border-bottom: 1px solid rgb(238, 238, 238);
   margin-bottom: 1rem;
-  padding: 0 1.8rem;
+  padding: 0 0.8rem;
   height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
 
   @include respond-to(md) {
     height: 7rem;
+    padding: 0 1.8rem;
   }
   @include respond-to(xl) {
     height: 8rem;
+    padding: 0 1.8rem;
   }
 
   .search_filter {
@@ -138,12 +146,50 @@
     }
 
     i {
-      font-size: 3rem;
+      font-size: 2.5rem;
       padding-left: 2rem;
 
       @include respond-to(lg) {
         display: none;
       }
     }
+  }
+}
+
+/*----------  MObile sidebar style  ----------*/
+.mobile_sidebar {
+  backdrop-filter: blur(11px) saturate(135%);
+  -webkit-backdrop-filter: blur(11px) saturate(135%);
+  background-color: rgba(255, 255, 255, 0.82);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 0 6px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+  input {
+    border: 1px solid rgb(231, 231, 231);
+    width: 100%;
+    padding: 4px 6px;
+    border-radius: 4px;
+  }
+
+  select {
+    border: 1px solid rgb(231, 231, 231);
+    padding: 4px 6px;
+    border-radius: 4px;
+  }
+  @include respond-to(md) {
+    input {
+      padding: 8px 6px;
+    }
+
+    select {
+      padding: 8px 6px;
+    }
+  }
+  @include respond-to(lg) {
+    display: none;
   }
 }
