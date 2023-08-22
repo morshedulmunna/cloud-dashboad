@@ -1,0 +1,67 @@
+.sidebar_wrapper {
+  .menu_card_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    .card_wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      color: $text-color-01;
+
+      p {
+        margin-top: 10px;
+      }
+
+      #with-hover {
+        display: none;
+      }
+
+      &:hover {
+        color: $pallet-1-primary;
+        transition: all 0.5s ease;
+
+        .card {
+          background: $pallet-1-primary;
+          box-shadow: $pallet-1-shadow;
+
+          #with-hover {
+            display: block;
+          }
+
+          #without-hover {
+            display: none;
+          }
+        }
+      }
+
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+
+        border-radius: 10px;
+        background: $card-bg;
+        cursor: pointer;
+
+        transition: all 0.5s ease; /* Moved the transition property here */
+
+        &:hover {
+          background: $pallet-1-primary;
+          box-shadow: $pallet-1-shadow;
+        }
+      }
+    }
+  }
+}
+
+#picture {
+  margin-top: 4rem;
+}
+#video {
+  margin-top: 4rem;
+}

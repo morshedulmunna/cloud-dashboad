@@ -28,6 +28,7 @@
 
       @include respond-to(lg) {
         display: block;
+        padding-left: 12px;
       }
     }
 
