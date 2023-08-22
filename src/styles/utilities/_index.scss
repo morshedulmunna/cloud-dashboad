@@ -23,7 +23,7 @@ body {
   max-width: $sm;
   margin: auto;
   margin-top: 0.4rem;
-  padding: 1.2rem;
+  padding: 0.5rem;
   @include respond-to(md) {
     max-width: $md;
     margin: auto;

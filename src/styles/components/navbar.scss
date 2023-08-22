@@ -55,7 +55,7 @@
 
         svg {
           position: absolute;
-          top: 25%;
+          top: 30%;
           left: 2%;
         }
 
@@ -131,6 +131,7 @@
 
         .icon {
           width: 20px;
+          cursor: pointer;
           @include respond-to(md) {
             width: fit-content;
           }
