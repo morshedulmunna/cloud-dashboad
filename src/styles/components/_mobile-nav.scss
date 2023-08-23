@@ -1,0 +1,25 @@
+#mobile_nav {
+  .bar {
+    @include respond-to(lg) {
+      display: none;
+    }
+
+    font-size: 2rem;
+  }
+
+  .mobile_sidebar {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    right: 0%;
+    top: 5rem;
+    transition: all 0.5s;
+  }
+
+  .active_sidebar {
+    right: -100%;
+    transition: all 0.9s;
+  }
+}

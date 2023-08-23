@@ -45,3 +45,11 @@ new Chart(ctx, {
     },
   },
 });
+
+// Mobile toggle
+const toggleButton = document.getElementById("togglebtn");
+const sidebar = document.querySelector(".mobile_sidebar");
+
+toggleButton.addEventListener("click", () => {
+  sidebar.classList.toggle("active_sidebar");
+});
