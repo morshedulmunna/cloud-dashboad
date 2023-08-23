@@ -12,9 +12,19 @@
   }
 
   .card_wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    @include respond-to(md) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include respond-to(lg) {
+      grid-template-columns: 1fr 1fr 1fr;
+
+      flex-direction: row;
+    }
     .card {
       border-radius: 15px;
       background: #f5f5f5;

@@ -3,17 +3,123 @@
 
   .middle_wrapper {
     overflow: hidden;
+  }
 
-    .file_manage_wrapper {
-      display: flex;
-
-      .recent_upload_manager {
-        width: 50%;
-        background-color: rgb(76, 182, 15);
+  .right_wrapper {
+    margin-left: 2rem;
+    .chart_content {
+      h4 {
+        color: var(--secondary-color, #25396f);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
       }
-      .file_manage {
-        width: 50%;
-        background-color: chocolate;
+    }
+
+    .shared_wrapper {
+      margin-top: 2rem;
+
+      h4 {
+        color: var(--text-dark, #505887);
+        font-size: 17.989px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 2rem;
+      }
+
+      .card_wrapper {
+        .card {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-right: 12px;
+          margin-bottom: 12px;
+
+          .content_image {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            .content {
+              h5 {
+                color: var(--text-dark, #505887);
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+              p {
+                color: var(--text-light, #718ebf);
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+          }
+          p {
+            color: var(--text-light, #718ebf);
+            text-align: right;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+
+    .action_wrapper {
+      margin-top: 6rem;
+      .dash_wrapper {
+        border-radius: 10px;
+        border: 1px dashed #d0c9ff;
+        background: #f6f4ff;
+        width: 100%;
+
+        position: relative;
+
+        .action_content {
+          border-radius: 10px;
+          background: var(--pallet-1-primary, #51459e);
+          position: absolute;
+          top: -25px;
+          left: -25px;
+          width: 100%;
+          overflow: hidden;
+          position: relative;
+          flex-shrink: 0;
+          padding: 2rem;
+          img {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+
+          p {
+            color: var(--pallet-1-grey, #dee1e6);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-right: 100px;
+            margin-bottom: 1rem;
+          }
+          button {
+            width: 107.281px;
+            height: 34px;
+            flex-shrink: 0;
+            border-radius: 5px;
+            background: var(--pallet-1-secondary, #84e8f4);
+            color: var(--pallet-1-primary, #51459e);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
       }
     }
   }
