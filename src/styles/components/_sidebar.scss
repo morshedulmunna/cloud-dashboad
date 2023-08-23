@@ -1,0 +1,158 @@
+.sidebar_wrapper {
+  overflow-y: scroll;
+
+  .menu_card_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    .card_wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      color: $text-color-01;
+
+      p {
+        margin-top: 10px;
+      }
+
+      #with-hover {
+        display: none;
+      }
+
+      &:hover {
+        color: $pallet-1-primary;
+        transition: all 0.5s ease;
+
+        .card {
+          background: $pallet-1-primary;
+          box-shadow: $pallet-1-shadow;
+
+          #with-hover {
+            display: block;
+          }
+
+          #without-hover {
+            display: none;
+          }
+        }
+      }
+
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+
+        @include respond-to(xl) {
+          width: 50px;
+          height: 50px;
+        }
+
+        border-radius: 10px;
+        background: $card-bg;
+        cursor: pointer;
+
+        transition: all 0.5s ease; /* Moved the transition property here */
+
+        &:hover {
+          background: $pallet-1-primary;
+          box-shadow: $pallet-1-shadow;
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    width: 100%;
+    padding: 40px 20px 0px 20px;
+    .content {
+      h3 {
+        color: $secondary-color;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px; /* 125% */
+
+        span {
+          color: $secondary-color;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+        }
+      }
+
+      p {
+        color: $secondary-color;
+        margin: 5px 0px;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 153.846% */
+      }
+
+      .used-bar-wrapper {
+        background-color: $card-bg;
+        height: 10px;
+        border-radius: 50px;
+        width: 100%;
+        margin-bottom: 30px;
+        margin-top: 15px;
+
+        .used-bar {
+          height: 10px;
+          border-radius: 50px;
+          width: 76%;
+          background-color: $pink;
+        }
+      }
+    }
+
+    .button_wrapper {
+      position: relative;
+      margin-bottom: 40px;
+      .button-shadow {
+        position: absolute;
+        top: 9px;
+        left: 10px;
+        border-radius: 13.185px;
+        opacity: 0.5;
+        background: #cfc8ff;
+        width: 169px;
+        height: 48px;
+        flex-shrink: 0;
+        z-index: -5; /* Move the shadow behind the button */
+      }
+
+      .button {
+        color: #fff;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        z-index: 2000;
+        line-height: 16.481px;
+        width: 100%;
+        padding: 14.833px 35.435px;
+        border-radius: 13.185px;
+        background: $pallet-1-primary;
+        z-index: 10; /* Bring the button above the shadow */
+
+        &:hover {
+          opacity: 0.8;
+          transition: all 0.4s;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+#picture {
+  margin-top: 2rem;
+}
+#video {
+  margin-top: 2rem;
+}

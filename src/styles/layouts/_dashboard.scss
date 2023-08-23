@@ -1,50 +1,52 @@
 #app {
   background-color: $background-color;
   width: 100%;
-  height: 100vh;
   overflow: hidden;
 
   .wrapper {
     background-color: $light;
     border-radius: 0.8rem;
-    height: fit-content;
+    overflow: hidden;
     @extend .shadow-xs;
+    margin-top: 1rem;
 
     .content_wrapper {
-      background-color: aquamarine;
       display: grid;
       grid-template-columns: auto;
-      gap: 2rem;
+      gap: 1rem;
+      margin-top: 2rem;
 
       .sidebar_wrapper {
         display: none;
         padding: 0.4rem;
+        border-right: 1px solid $card-bg;
+        background-color: $light;
 
         @include respond-to(lg) {
           display: block;
         }
       }
 
-      .middle_wrapper {
-        background-color: azure;
-        padding: 0.4rem;
-      }
+      .main_content_wrapper {
+        display: grid;
+        grid-template-columns: auto;
 
-      .right_wrapper {
-        padding: 0.4rem;
+        @include respond-to(md) {
+          grid-template-columns: 8fr 4fr;
+        }
+
+        .middle_wrapper {
+          padding: 0.4rem;
+        }
+
+        .right_wrapper {
+          padding: 0.4rem;
+        }
       }
 
       @include respond-to(lg) {
-        grid-template-columns: 2fr 7fr 3fr;
+        grid-template-columns: 2fr 10fr;
       }
     }
   }
-
-  //   padding: 2rem;
-  //   border-radius: 0.4rem;
-  //   @include absCenter;
-
-  //   @include respond-to(desktop) {
-  //     @extend .container--desktop;
-  //   }
 }

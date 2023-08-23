@@ -18,11 +18,22 @@
   <body>
     <main id="app" class="container">
       <section class="wrapper">
-        <!-- Top Navbar  -->
+        <!-- /*=============================================
+        =            Navbar area            =
+        =============================================*/ -->
         <section class="navbar_wrapper">
           <!-- Logo start -->
           <div class="logo">
-            <img src="./src/assets/images/logo.svg" alt="Logo" />
+            <img
+              id="desktop-logo"
+              src="./src/assets/images/logo.svg"
+              alt="Logo"
+            />
+            <img
+              class="mobile-logo"
+              src="./src/assets/icons/smaill-logo.svg"
+              alt="Logo"
+            />
           </div>
           <!-- Logo End -->
 
@@ -69,6 +80,7 @@
             </div>
           </div>
 
+          <!-- Profile Area -->
           <div class="profile-bar">
             <div class="profile_wrapper">
               <div class="content">
@@ -87,15 +99,353 @@
               </div>
             </div>
             <!-- bar only show Mobile version -->
-            <i class="fa-solid fa-bars" style="color: #183153"></i>
           </div>
         </section>
-        <!-- Content section -->
+        <div class="mobile_sidebar">
+          <input type="text" placeholder="Search files..." />
+
+          <select name="" id="">
+            <option value="">Filter</option>
+            <option value="1">Filter 1</option>
+            <option value="1">Filter 2</option>
+            <option value="1">Filter 3</option>
+          </select>
+        </div>
+        <!-- /*=====  End of Navbar area  ======*/ -->
+
+        <!-- /*=============================================
+        =           Content Area            =
+        =============================================*/ -->
         <section class="content_wrapper">
-          <section class="sidebar_wrapper">sidebar</section>
-          <section class="middle_wrapper">middle Content</section>
-          <section class="right_wrapper">right side</section>
+          <!-- Sidebar Area Start Here  -->
+          <section class="sidebar_wrapper">
+            <!-- sidebar area -->
+            <div class="menu_card_wrapper">
+              <!-- card-1 -->
+              <div class="card_wrapper">
+                <div class="card">
+                  <img
+                    id="without-hover"
+                    src="./src/assets/icons/dashboard.svg"
+                    alt="dashboard"
+                  />
+                  <img
+                    id="with-hover"
+                    src="./src/assets/icons/dashboardcopy.svg"
+                    alt="dashboard"
+                  />
+                </div>
+                <p>Dashboard</p>
+              </div>
+              <!-- card-1 End -->
+              <!-- card-2 -->
+              <div class="card_wrapper">
+                <div class="card">
+                  <img
+                    id="without-hover"
+                    src="./src/assets/icons/all-file.svg"
+                    alt="all-file"
+                  />
+                  <img
+                    id="with-hover"
+                    src="./src/assets/icons/all-file copy.svg"
+                    alt="all-file"
+                  />
+                </div>
+                <p>All-File</p>
+              </div>
+              <!-- card-2 End -->
+              <!-- card-3 -->
+              <div class="card_wrapper">
+                <div class="card">
+                  <img
+                    id="without-hover"
+                    src="./src/assets/icons/shared.svg"
+                    alt="all-file"
+                  />
+                  <img
+                    id="with-hover"
+                    src="./src/assets/icons/shared copy.svg"
+                    alt="all-file"
+                  />
+                </div>
+                <p>Shared</p>
+              </div>
+              <!-- card-3 End -->
+
+              <!-- card-3 -->
+              <div class="card_wrapper">
+                <div class="card">
+                  <img
+                    id="without-hover"
+                    src="./src/assets/icons/favorite.svg"
+                    alt="shared"
+                  />
+                  <img
+                    id="with-hover"
+                    src="./src/assets/icons/favorite copy.svg"
+                    alt="shared"
+                  />
+                </div>
+                <p>Recent</p>
+              </div>
+              <!-- card-3 End -->
+              <!-- card-4 -->
+              <div class="card_wrapper">
+                <div class="card">
+                  <img
+                    id="without-hover"
+                    src="./src/assets/icons/recent.svg"
+                    alt="shared"
+                  />
+                  <img
+                    id="with-hover"
+                    src="./src/assets/icons/recent copy.svg"
+                    alt="shared"
+                  />
+                </div>
+                <p>Recent</p>
+              </div>
+              <!-- card-4 End -->
+              <!-- card-4 -->
+              <div class="card_wrapper">
+                <div class="card">
+                  <img
+                    id="without-hover"
+                    src="./src/assets/icons/requiest.svg"
+                    alt="shared"
+                  />
+                  <img
+                    id="with-hover"
+                    src="./src/assets/icons/requiest copy.svg"
+                    alt="shared"
+                  />
+                </div>
+                <p>Request</p>
+              </div>
+              <!-- card-4 End -->
+
+              <!-- /*=============================================
+=            Section comment block            =
+=============================================*/ -->
+
+              <!-- card -->
+              <div class="card_wrapper">
+                <div id="picture" class="card">
+                  <img
+                    id="without-hover"
+                    src="./src/assets/icons/picture copy.svg"
+                    alt="shared"
+                  />
+                  <img
+                    id="with-hover"
+                    src="./src/assets/icons/picture copy.svg"
+                    alt="shared"
+                  />
+                </div>
+                <p>Picture</p>
+              </div>
+              <!-- card End -->
+              <!-- card-->
+              <div id="video" class="card_wrapper">
+                <div class="card">
+                  <img
+                    id="without-hover"
+                    src="./src/assets/icons/video.svg"
+                    alt="shared"
+                  />
+                  <img
+                    id="with-hover"
+                    src="./src/assets/icons/video copy.svg"
+                    alt="shared"
+                  />
+                </div>
+                <p>Video</p>
+              </div>
+              <!-- card End -->
+              <!-- card -->
+              <div class="card_wrapper">
+                <div class="card">
+                  <img
+                    id="without-hover"
+                    src="./src/assets/icons/doc.svg"
+                    alt="shared"
+                  />
+                  <img
+                    id="with-hover"
+                    src="./src/assets/icons/doc copy.svg"
+                    alt="shared"
+                  />
+                </div>
+                <p>Document</p>
+              </div>
+              <!-- card End -->
+              <!-- card -->
+              <div class="card_wrapper">
+                <div class="card">
+                  <img
+                    id="without-hover"
+                    src="./src/assets/icons/signed.svg"
+                    alt="shared"
+                  />
+                  <img
+                    id="with-hover"
+                    src="./src/assets/icons/signed copy.svg"
+                    alt="shared"
+                  />
+                </div>
+                <p>Singed</p>
+              </div>
+              <!-- card End -->
+
+              <!--  -->
+            </div>
+
+            <div class="wrapper">
+              <div class="content">
+                <h3>25.32 GB <span>used</span></h3>
+                <p>79% used - 6.64 GB free</p>
+
+                <div class="used-bar-wrapper">
+                  <div class="used-bar"></div>
+                </div>
+              </div>
+
+              <div class="button_wrapper">
+                <div class="button">Add More Space</div>
+                <div class="button-shadow"></div>
+              </div>
+            </div>
+          </section>
+          <!-- Sidebar Area End Here  -->
+
+          <div class="main_content_wrapper">
+            <section class="middle_wrapper">
+              <!-- card folder Area start -->
+              <div class="card_area_wrapper">
+                <!-- each card -->
+                <div class="card card-1">
+                  <div class="folder-dot">
+                    <img
+                      src="./src/assets/images/folder-1.svg"
+                      alt="Folder-1"
+                    />
+                    <img src="./src/assets/icons/dot.svg" alt="dot" />
+                  </div>
+                  <p>Design</p>
+
+                  <div class="text">
+                    <span> 17 files </span>
+                    <span> 12 GB </span>
+                  </div>
+                </div>
+
+                <!-- each card 2-->
+                <div class="card card-2">
+                  <div class="folder-dot">
+                    <img src="./src/assets/images/folder2.svg" alt="Folder-1" />
+                    <img src="./src/assets/icons/dot.svg" alt="dot" />
+                  </div>
+                  <p>Music</p>
+
+                  <div class="text">
+                    <span> 17 files </span>
+                    <span> 12 GB </span>
+                  </div>
+                </div>
+
+                <!-- each card 3-->
+                <div class="card card-3">
+                  <div class="folder-dot">
+                    <img src="./src/assets/images/folder3.svg" alt="Folder-1" />
+                    <img src="./src/assets/icons/dot.svg" alt="dot" />
+                  </div>
+                  <p>Documents</p>
+
+                  <div class="text">
+                    <span> 17 files </span>
+                    <span> 12 GB </span>
+                  </div>
+                </div>
+
+                <!-- each card 4-->
+                <div class="card card-4">
+                  <div class="folder-dot">
+                    <img src="./src/assets/images/folder4.svg" alt="Folder-1" />
+                    <img src="./src/assets/icons/dot.svg" alt="dot" />
+                  </div>
+                  <p>Music</p>
+
+                  <div class="text">
+                    <span> 17 files </span>
+                    <span> 12 GB </span>
+                  </div>
+                </div>
+
+                <!-- each card 5 -->
+                <div class="card card-3">
+                  <div class="folder-dot">
+                    <img src="./src/assets/images/folder3.svg" alt="Folder-1" />
+                    <img src="./src/assets/icons/dot.svg" alt="dot" />
+                  </div>
+                  <p>Images</p>
+
+                  <div class="text">
+                    <span> 17 files </span>
+                    <span> 12 GB </span>
+                  </div>
+                </div>
+              </div>
+              <!-- card folder Area End -->
+
+              <!-- Quick access start -->
+              <div class="quick_access_wrapper">
+                <h5>Quick Access</h5>
+                <div class="card_wrapper">
+                  <!-- Card -->
+                  <div class="card">
+                    <img src="./src/assets/images/image1.png" alt="image 1" />
+
+                    <div class="name_image">
+                      <img src="./src/assets/icons/image.svg" alt="" />
+                      <p>Building Image <span>.jpeg</span></p>
+                    </div>
+                  </div>
+                  <!-- Card -->
+                  <div class="card">
+                    <img src="./src/assets/images/image2.png" alt="image 1" />
+
+                    <div class="name_image">
+                      <img src="./src/assets/icons/image2.svg" alt="" />
+                      <p>Product Video<span>.mp4</span></p>
+                    </div>
+                  </div>
+                  <!-- Card -->
+                  <div class="card">
+                    <img src="./src/assets/images/image3.png" alt="image 1" />
+
+                    <div class="name_image">
+                      <img src="./src/assets/icons/image3.svg" alt="" />
+                      <p>Customer<span>.pdf</span></p>
+                    </div>
+                  </div>
+                  <!--  -->
+                </div>
+              </div>
+              <!-- Quick access end -->
+
+              <!-- Recent upload file manager start -->
+              <div class="file_manage_wrapper">
+                <!-- recent upload -->
+                <div class="recent_upload_manager">upload manage</div>
+                <div class="file_manage">file manager</div>
+              </div>
+              <!-- Recent upload file manager eng -->
+            </section>
+            <section class="right_wrapper">right side</section>
+          </div>
         </section>
+        <!-- /*=====  End of Content Area  ======*/ -->
       </section>
     </main>
     <script type="module" src="/main.js"></script>

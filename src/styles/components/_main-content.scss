@@ -1,0 +1,20 @@
+.main_content_wrapper {
+  width: 100%;
+
+  .middle_wrapper {
+    overflow: hidden;
+
+    .file_manage_wrapper {
+      display: flex;
+
+      .recent_upload_manager {
+        width: 50%;
+        background-color: rgb(76, 182, 15);
+      }
+      .file_manage {
+        width: 50%;
+        background-color: chocolate;
+      }
+    }
+  }
+}
