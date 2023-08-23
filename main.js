@@ -53,3 +53,10 @@ const sidebar = document.querySelector(".mobile_sidebar");
 toggleButton.addEventListener("click", () => {
   sidebar.classList.toggle("active_sidebar");
 });
+// Click outside sidebar to remove active_sidebar class
+document.addEventListener("click", (event) => {
+  const target = event.target;
+  if (!sidebar.contains(target) && target !== toggleButton) {
+    sidebar.classList.remove("active_sidebar");
+  }
+});
