@@ -8,6 +8,21 @@ body {
   background-color: $background-color;
 }
 
+*::-webkit-scrollbar {
+  display: block;
+  background: transparent;
+  width: 0px;
+  height: 0px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(37, 56, 75);
+  background-color: #bbccdd;
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 /**
  *
  * Generate Shadow class 

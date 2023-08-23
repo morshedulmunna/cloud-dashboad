@@ -6,20 +6,19 @@
   .wrapper {
     background-color: $light;
     border-radius: 0.8rem;
-    overflow-y: auto;
-    height: 95vh;
+    height: auto;
+    overflow: auto;
     @extend .shadow-xs;
 
     .content_wrapper {
       display: grid;
       grid-template-columns: auto;
-      gap: 2rem;
+      gap: 1rem;
 
       .sidebar_wrapper {
         display: none;
         padding: 0.4rem;
         border-right: 1px solid $card-bg;
-        height: 100vh;
         background-color: $light;
 
         @include respond-to(lg) {
@@ -27,16 +26,25 @@
         }
       }
 
-      .middle_wrapper {
-        padding: 0.4rem;
-      }
+      .main_content_wrapper {
+        display: grid;
+        grid-template-columns: auto;
 
-      .right_wrapper {
-        padding: 0.4rem;
+        @include respond-to(md) {
+          grid-template-columns: 8fr 4fr;
+        }
+
+        .middle_wrapper {
+          padding: 0.4rem;
+        }
+
+        .right_wrapper {
+          padding: 0.4rem;
+        }
       }
 
       @include respond-to(lg) {
-        grid-template-columns: 2fr 7fr 3fr;
+        grid-template-columns: 2fr 10fr;
       }
     }
   }

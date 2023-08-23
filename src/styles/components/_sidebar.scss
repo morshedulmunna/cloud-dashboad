@@ -1,4 +1,6 @@
 .sidebar_wrapper {
+  overflow-y: scroll;
+
   .menu_card_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -62,11 +64,89 @@
       }
     }
   }
+
+  .wrapper {
+    width: 100%;
+    padding: 40px 20px 0px 20px;
+    .content {
+      h3 {
+        color: $secondary-color;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px; /* 125% */
+
+        span {
+          color: $secondary-color;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+        }
+      }
+
+      p {
+        color: $secondary-color;
+        margin: 5px 0px;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 153.846% */
+      }
+
+      .used-bar-wrapper {
+        background-color: $card-bg;
+        height: 10px;
+        border-radius: 50px;
+        width: 100%;
+        margin-bottom: 30px;
+        margin-top: 15px;
+
+        .used-bar {
+          height: 10px;
+          border-radius: 50px;
+          width: 76%;
+          background-color: $pink;
+        }
+      }
+    }
+
+    .button_wrapper {
+      position: relative;
+      margin-bottom: 40px;
+      .button-shadow {
+        position: absolute;
+        top: 9px;
+        left: 10px;
+        border-radius: 13.185px;
+        opacity: 0.5;
+        background: #cfc8ff;
+        width: 169px;
+        height: 48px;
+        flex-shrink: 0;
+        z-index: -5; /* Move the shadow behind the button */
+      }
+
+      .button {
+        color: #fff;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        z-index: 2000;
+        line-height: 16.481px;
+        width: 100%;
+        padding: 14.833px 35.435px;
+        border-radius: 13.185px;
+        background: $pallet-1-primary;
+        z-index: 10; /* Bring the button above the shadow */
+      }
+    }
+  }
 }
 
 #picture {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 #video {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
