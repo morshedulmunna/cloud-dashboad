@@ -72,12 +72,14 @@
     }
 
     .action_wrapper {
-      margin-top: 6rem;
+      margin-top: 5rem;
+      display: flex;
+      justify-content: end;
       .dash_wrapper {
         border-radius: 10px;
         border: 1px dashed #d0c9ff;
         background: #f6f4ff;
-        width: 100%;
+        width: 80%;
 
         position: relative;
 
@@ -86,7 +88,7 @@
           background: var(--pallet-1-primary, #51459e);
           position: absolute;
           top: -25px;
-          left: -25px;
+          left: -55px;
           width: 100%;
           overflow: hidden;
           position: relative;
@@ -104,8 +106,8 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-            padding-right: 100px;
             margin-bottom: 1rem;
+            padding-right: 80px;
           }
           button {
             width: 107.281px;
