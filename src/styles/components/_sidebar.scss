@@ -139,6 +139,12 @@
         border-radius: 13.185px;
         background: $pallet-1-primary;
         z-index: 10; /* Bring the button above the shadow */
+
+        &:hover {
+          opacity: 0.8;
+          transition: all 0.4s;
+          cursor: pointer;
+        }
       }
     }
   }
